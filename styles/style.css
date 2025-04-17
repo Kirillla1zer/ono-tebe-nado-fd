@@ -1,1 +1,341 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;
+  width: 100%;
+  height: 293px;
+  padding: 92px 50px 96px 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+.cover {
+  position: relative;
+  width: 100%;
+  height: 757px;
+  margin-top: 0px;
+  padding: 165px 50px 207px 50px;
+  color: white;
+}
+.lots {
+  width: 1052px;
+  height: 723px;
+  margin: auto;
+  margin-top: 180px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  justify-content: center;
+  width: 1052px;
+  height: 595px;
+  margin: auto;
+  margin-top: 120px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 1100px;
+  height: 180px;
+  margin-top: 180px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+  padding: 1, 16px 10px 1px 9px;
+}
+
+.header_logo_black {
+  height: 105px;
+}
+
+.header_menu {
+  width: 391px;
+  height: 34px;
+  max-height: 22px;
+  margin-top: 4px;
+  margin-right: 36px;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 33px;
+  line-height: 100%;
+  list-style: circle;
+}
+
+.header_menu_link {
+  text-decoration: underline;
+}
+
+.item_without_circle {
+  list-style: none;
+}
+
+.address {
+  max-width: 240px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+address a {
+  text-underline-offset: 4px;
+}
+
+.cover__title {
+  width: 1000px;
+  height: 385px;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+  letter-spacing: 30%;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  margin-top: 1px;
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  display: block;
+  padding-top: 23px;
+  padding-left: 28px;
+  letter-spacing: 29px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  margin-right: -28px;
+  padding-top: 20px;
+  letter-spacing: 29px;
+  text-align: right;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 117px;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 18px;
+}
+.bet-button {
+  margin-top: -12px;
+  border-width: 1px;
+  border-color: #ffffff;
+  padding: 12px 31px 11px 31px;
+  color: white;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.cover_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  background-color: #000000;
+}
+.lost {
+  font-family: "Raleway", sans-serif;
+}
+.lots__heading {
+  margin-bottom: 35px;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  list-style-type: none;
+}
+
+.card-link {
+  position: relative;
+  text-decoration: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  height: 596px;
+  padding: 48px 40px 48px 40px;
+  color: white;
+}
+.lots__look-more-link {
+  display: block;
+  margin: 30px 0px 0px 40px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card_type_film {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/card-lot-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/card-lot-02.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/card-lot-03.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  margin-left: 47px;
+  border: solid black 1px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.about__logo-image {
+  padding: 64px 45px 62px 47px;
+}
+
+.about__column {
+  align-content: end;
+  margin-left: 25px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.first_paragraph {
+  margin-right: 5px;
+  margin-bottom: 24px;
+}
+
+.footer__menu {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.footer__menu-list {
+  font-weight: 400;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  margin-top: 4px;
+  text-decoration: underline;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 48px;
+  margin-top: 1px;
+  margin-left: 90px;
+  list-style: none;
+}
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+}
+
+.footer .address {
+  margin-right: 95px;
+}
