@@ -162,8 +162,7 @@ address a {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset:0;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -205,6 +204,8 @@ address a {
   min-height: 596px;
   padding: 48px 40px 48px 40px;
   color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -232,20 +233,14 @@ address a {
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .about__logo {
@@ -327,5 +322,5 @@ address a {
 }
 
 .footer .address {
-  margin-right: 95px;
+  margin-right: 55px;
 }
